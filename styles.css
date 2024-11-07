@@ -1,0 +1,155 @@
+/* Estilos Gerais para toda a página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(180deg, #0077b6, #023e8a); /* Gradiente mais pronunciado de azul claro para azul escuro */
+    color: #fff; /* Texto padrão em branco */
+}
+
+/* Estilo do Cabeçalho */
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Cabeçalho semi-transparente para contraste */
+    color: white;
+    padding: 20px 0; /* Ajustei o padding para dar mais espaço */
+    text-align: center; /* Centraliza o texto */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo h1 {
+    font-size: 24px;
+    color: white;
+    margin: 0;
+}
+
+/* Estilo da Seção de Introdução */
+.intro {
+    color: white;
+    padding: 80px 20px;
+    text-align: center; /* Centraliza o conteúdo da introdução */
+}
+
+.intro h2 {
+    font-size: 36px;
+    color: black; /* Título em preto */
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px;
+    color: black; /* Texto em preto para parágrafo */
+    margin-bottom: 20px;
+}
+
+/* Estilo da Imagem (Tornar a imagem responsiva e ajustada) */
+.intro img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo da Seção de Serviços */
+.services {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.services h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: black; /* Título em preto */
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background-color: #e9f2f1;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: black; /* Título em preto */
+}
+
+.service-item p {
+    font-size: 16px;
+    color: black; /* Texto em preto para parágrafo */
+}
+
+/* Estilo do Rodapé */
+footer {
+    background-color: #023e8a; /* Azul escuro para o rodapé */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Media Queries para Responsividade */
+
+/* Ajustes para telas pequenas (móveis) */
+@media (max-width: 768px) {
+    .intro h2 {
+        font-size: 28px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+
+    .service-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Ajustes para telas muito pequenas (dispositivos móveis) */
+@media (max-width: 480px) {
+    .intro h2 {
+        font-size: 24px;
+    }
+
+    .intro p {
+        font-size: 14px;
+    }
+
+    .service-item img {
+        max-width: 300px;
+    }
+}
